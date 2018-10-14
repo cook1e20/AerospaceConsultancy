@@ -13,13 +13,13 @@ a {
 
 h2 {
   font-family: Roboto Slab;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.5em;
 }
 
 p {
   line-height: 1.5em;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 #logo {
@@ -28,11 +28,11 @@ p {
 }
 #logo h1 {
   font-family: "Ruthie";
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin: 0;
 }
 #logo h2 {
-  font-size: 1em;
+  font-size: 1rem;
   grid-column: span 2;
   margin: 0;
 }
@@ -46,6 +46,7 @@ p {
 }
 
 .flex-nav {
+  height: 5rem;
   margin: 0 2rem 0 2rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -69,10 +70,6 @@ p {
   justify-content: flex-end;
   font-size: 1.125rem;
   align-items: center;
-}
-
-p {
-  font-size: 1.2em;
 }
 
 i {
@@ -110,6 +107,11 @@ i {
   margin-top: 4rem;
 }
 
+.column-12 {
+  grid-column-start: span 12;
+  grid-column-end: span 12;
+}
+
 @media (min-width: 62rem) {
   .toggle {
     display: none;
@@ -126,10 +128,6 @@ i {
     position: relative;
     justify-content: flex-end;
     margin: auto;
-  }
-
-  H2.LeadText {
-    font-size: 3rem;
   }
 }
 .container {
@@ -156,20 +154,23 @@ i {
 
 .about {
   width: 90%;
-  margin: auto;
+  margin: 2em;
   text-align: center;
   background-color: rgba(229, 229, 229, 0.72);
   color: #000;
-  margin-top: -7rem;
   z-index: 10;
   padding: 10px 20px 10px 20px;
 }
 
+.aboutWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .aircraftimg {
-  width: 80%;
+  width: 85%;
   margin: auto;
   height: auto;
-  padding: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
