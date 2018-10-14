@@ -174,8 +174,41 @@ i {
 }
 
 .what {
-  width: 80%;
+  width: 90%;
   margin: auto;
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.what h2 {
+  grid-column-start: span 8;
+  grid-column-end: span 8;
+}
+
+.What-card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2);
+  padding: 1em;
+  border: 1px solid #E1E1E1;
+  margin: 0.5em;
+}
+.What-card h3 {
+  grid-column-start: span 8;
+  grid-column-end: span 8;
+  font-size: 1.5em;
+}
+.What-card i {
+  grid-column-start: span 4;
+  grid-column-end: span 4;
+  align-self: center;
+  justify-self: center;
+  color: #f05f40;
+}
+.What-card p {
+  grid-column-start: span 12;
+  grid-column-end: span 12;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
