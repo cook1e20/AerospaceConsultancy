@@ -20,11 +20,8 @@ p
 //Navbar
 
 #logo
-    display: grid
-    grid-template-columns: auto auto
-    
-    width: 13rem
-    align-items: center
+    display: flex    
+    flex-direction: column
     h1 
         font-family: "Ruthie"
         font-size: 2.5em
@@ -35,11 +32,10 @@ p
         margin: 0
     img
         background-position: center
-        background-repeat: no-repeat
-        background-size: cover
-        position: relative
-        justify-self: center
-
+        height: 2.5rem
+    .logo-top
+        display: flex
+        align-items: center
 .flex-nav
   margin: 0 2rem 0 2rem 
   display: grid
@@ -124,10 +120,13 @@ i
     #jumbo
         width: 100%
         height: auto
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+        justify-self: center
     h2 
         position: absolute
-        font-weight: bold
-        
+        font-weight: bold 
         top: 30%
         left: 30%
         transform: translate(-30%, -30%)
