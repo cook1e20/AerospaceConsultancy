@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: "Roboto", "Pontano Sans", sans-serif;
-  color: #888;
 }
 
 a {
@@ -11,15 +10,22 @@ a {
   a-color: #E32626;
 }
 
+h1 {
+  font-size: 48px;
+}
+
 h2 {
   font-family: Roboto Slab;
-  font-size: 2.5rem;
+  font-size: 45px;
   line-height: 1.5em;
 }
 
 p {
-  line-height: 1.5em;
-  font-size: 0.9em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 1em;
 }
 
 #logo {
@@ -131,46 +137,45 @@ i {
   }
 }
 .container {
-  position: relative;
-  z-index: -10;
-}
-.container #jumbo {
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
+  display: flex;
+  background-image: url(../img/herobanner.png);
+  width: 100vw;
+  height: 35vh;
+  background-position: center;
   background-size: cover;
-  position: relative;
-  justify-self: center;
+  justify-content: center;
+  align-items: center;
 }
 .container h2 {
-  position: absolute;
+  color: #fff;
   font-weight: bold;
-  top: 30%;
-  left: 30%;
-  transform: translate(-30%, -30%);
-  color: white;
-  width: fit-content;
 }
 
 .about {
   width: 90%;
   margin: 2em;
   text-align: center;
-  background-color: rgba(229, 229, 229, 0.72);
   color: #000;
-  z-index: 10;
   padding: 10px 20px 10px 20px;
 }
 
 .aboutWrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  background-color: rgba(229, 229, 229, 0.72);
 }
 
 .aircraftimg {
   width: 85%;
   margin: auto;
   height: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.what {
+  width: 80%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
