@@ -25,7 +25,7 @@ p {
   font-style: normal;
   font-weight: normal;
   line-height: normal;
-  font-size: 1em;
+  font-size: 0.9rem;
 }
 
 #logo {
@@ -194,13 +194,13 @@ i {
   margin: 0.5em;
 }
 .What-card h3 {
-  grid-column-start: span 8;
-  grid-column-end: span 8;
+  grid-column-start: span 9;
+  grid-column-end: span 9;
   font-size: 1.5em;
 }
 .What-card i {
-  grid-column-start: span 4;
-  grid-column-end: span 4;
+  grid-column-start: span 3;
+  grid-column-end: span 3;
   align-self: center;
   justify-self: center;
   color: #f05f40;
