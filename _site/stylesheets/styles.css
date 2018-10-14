@@ -1,9 +1,19 @@
 body {
   margin: 0;
   font-family: "Roboto", "Pontano Sans", sans-serif;
-  font-size: 16px;
+  font-size: 100%;
 }
 
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 22px;
+  }
+}
 a {
   color: #888;
   text-decoration: none;
@@ -135,11 +145,21 @@ i {
     justify-content: flex-end;
     margin: auto;
   }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-family: Roboto Slab;
+    font-size: 45px;
+    line-height: 1.5em;
+  }
 }
 .container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/herobanner.png);
   width: 100vw;
-  height: 40vh;
+  min-height: 40vh;
   background-position: center;
   background-size: cover;
   justify-content: center;
@@ -148,10 +168,10 @@ i {
 .container h1 {
   font-family: "Ruthie";
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 150px;
 }
 .container h2 {
-  font-size: 32px;
+  font-size: 60px;
   margin-top: 0;
   width: 70%;
   margin-left: auto;
@@ -165,11 +185,14 @@ i {
 }
 
 .about {
-  margin: 2em;
-  text-align: center;
+  width: 90%;
+  margin: auto;
 }
 .about h2 {
   text-align: left;
+}
+.about p {
+  text-align: justify;
 }
 
 .aboutWrapper {
@@ -221,11 +244,19 @@ i {
   grid-column-start: span 12;
   grid-column-end: span 12;
   text-align: center;
+  padding: 1em;
+  margin: 0;
 }
 
 .projects {
   width: 90%;
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.projects h2 {
+  grid-column-start: span 12;
+  grid-column-end: span 12;
 }
 
 .Project-card {
@@ -239,9 +270,12 @@ i {
   font-size: 1.5em;
 }
 .Project-card img {
-  width: 400px;
+  min-width: 30vw;
   height: auto;
   margin: auto;
+}
+.Project-card p {
+  padding: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
