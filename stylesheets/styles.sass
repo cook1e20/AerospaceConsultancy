@@ -1,6 +1,7 @@
 body
   margin: 0
   font-family: 'Roboto', 'Pontano Sans', sans-serif
+  font-size: 16px
 
 
 a
@@ -21,7 +22,6 @@ p
   font-style: normal
   font-weight: normal
   line-height: normal
-  font-size: 0.9rem
 //Navbar
 
 #logo
@@ -118,39 +118,52 @@ i
 
 //Header/Jumbo
 .container
-    display: flex
-    background-image: url(../img/herobanner.png)
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/herobanner.png)
     width: 100vw
-    height: 35vh
+    height: 40vh
     background-position: center
     background-size: cover
     justify-content: center
     align-items: center
+
+    .logo-top
+
+    h1
+        font-family: "Ruthie"
+        margin-bottom: 0
+        font-size: 60px
+        
     h2 
-        color: #fff
-        font-weight: bold
+        font-size: 32px
+        margin-top: 0
+        width: 70%
+        margin-left: auto
+        margin-right: auto
+    .LeadText
+        color: #ffffff
+        text-align: center
+        padding: 1em
+        margin: 0
 
 
 .about
-    width: 90%
+    h2 
+        text-align: left
     margin: 2em
     text-align: center
-    color: #000
-    padding: 10px 20px 10px 20px
 
 
 .aboutWrapper
     display: grid
     grid-template-columns: repeat(12, 1fr)
-    background-color: rgba(229, 229, 229, 0.72)
 
 
 .aircraftimg
-    width: 85%
+    display: block
+    width: 80%
+    max-width: 800px
+    padding: 2em
     margin: auto
-    height: auto
-    padding-top: 2em
-    padding-bottom:2em 
 
 .what
     width: 90%
@@ -183,4 +196,23 @@ i
         grid-column-end: span 12
         text-align: center
         
+
+.projects
+    width: 90%
+    margin: auto
+    
+.Project-card
+    display: flex
+    flex-direction: column
+    text-align: center
+    border: 1px solid #E1E1E1
+    margin: 0.5em
+
+    h3 
+        font-size: 1.5em
+    img
+        width: 400px
+        height: auto
+        margin: auto
+
 
