@@ -15,18 +15,15 @@
 
     <body onresize="resizeToggle()" onscroll='resizeToggle()'>
         <nav class='flex-nav'>
-            <div id='logo' class='column-6 column-8'>
+            <div id='logo' class='column-6 column-8' class='logo-container'>
                 <div class=logo-top>
                     <h1 class="headerTitle">S Cooke</h1>
-                    <img src="./img/logo.png" alt="S Cooke Logo">
+                    <img src="./img/logo.png" alt="S Cooke Logo" class='logoimg'>
                 </div>
                 <h2 class=headerSubTitle>Engineering Consultancy</h2>
             </div>
             <div class='column-6 column-4'>
                 <a href="#" class='toggle' onclick='navToggle()'>
-                    <p>
-                        Menu
-                    </p>
                     <i class="fa fa-bars"></i>
                 </a>
                 <ul id='phone-nav'>
@@ -106,17 +103,21 @@
                 <img src="./img/Cockpit.png " alt="Aircraft cockpit ">
                 <p>Developing positive communications between the end user and the engineers to develop cutting edge solutions
                     to the highly demanding Cockpit enviroment.</p>
-                <i></i>
-                <i></i>
-                <i></i>
+                <div class='projectIcons'>
+                    <i class="fa fa-4x fa-quote-right text-primary sr-icons"></i>
+                    <i class="fa fa-4x fa-fighter-jet text-primary sr-icons"> </i>
+                    <i class="fa fa-4x fa-users"></i>
+                </div>
             </div>
             <div class="Project-card column-6 column-12">
                 <h3>Avionic Test</h3>
                 <img src="./img/Avionictest.png " alt="Aircraft Avionic testing ">
                 <p>Ensuring the Avionic Product was fit for purpose, Planning, performing and delivering detailed reports on
                     the lastest software standard. </p>
-                <i></i>
-                <i></i>
+                <div class='projectIcons'>
+                    <i class="fa fa-4x fa-pencil-square-o text-primary sr-icons"></i>
+                    <i class="fa fa-4x fa-quote-right text-primary sr-icons"></i>
+                </div>
 
             </div>
             <div class="Project-card column-6 column-12">
@@ -125,18 +126,39 @@
                 <p>Providing qualification evidence that the avionic equipment meets the latest Do-160 enviromental testing
                     standards.
                 </p>
-                <i></i>
-                <i></i>
+                <div class='projectIcons'>
+                    <i class="fa fa-4x fa-pencil-square-o text-primary sr-icons"></i>
+                    <i class="fa fa-4x fa-quote-right text-primary sr-icons"></i>
+                </div>
             </div>
         </div>
-        <h2>Contact</h2>
-        <form action=" "></form>
-        <footer>
-            <img src=" " alt=" ">
-            <i></i>
-            <p>© Copyright SCooke Ltd. Site Developed by Stephen Cooke</p>
-            <p></p>
+        <div class="contactContainer">
+            <div class="contactarea">
+                <h2>Get in touch</h2>
+                <form name="contact" id="contact-form" method='POST' netlify>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
 
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="email">
+
+                    <label for="addit">Details:</label>
+                    <textarea type="text" id="addit" name="info"></textarea>
+                    <button type="submit">Submit</button>
+
+            </div>
+        </div>
+        </form>
+        <footer>
+            <div class='logo-foot'>
+                <h1 class="headerTitle">S Cooke</h1>
+                <img src="./img/logo.png" alt="S Cooke Logo" class='logoimg'>
+            </div>
+            <a href='mailto:stevecooke20@gmail.com'>
+                <img src='./img/envelope-open-solid.svg'>
+            </a>
+            <p>Site Created by
+                <a href="" style="color:#29a9df">Cooke</a> © Copyright S Cooke Ltd. </p>
         </footer>
 
 

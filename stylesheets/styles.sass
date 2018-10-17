@@ -23,6 +23,7 @@ h2
     font-family: Roboto Slab
     font-size: 45px
     line-height: 1.5em
+    margin-bottom: 0.4em
     
 p 
   font-family: Roboto
@@ -36,18 +37,22 @@ p
     flex-direction: column
     h1 
         font-family: "Ruthie"
-        font-size: 2.5rem
+        font-size: 4rem
         margin: 0
     h2 
         font-size: 1rem
         grid-column: span 2
         margin: 0
-    img
-        background-position: center
-        height: 2.5rem
+        display: none
+        
     .logo-top
         display: flex
         align-items: center
+
+.logoimg
+    background-position: center
+    height: 4rem
+    width: auto
 
 .flex-nav
     height: 5rem
@@ -55,6 +60,7 @@ p
     display: grid
     grid-template-columns: repeat(12, 1fr)
     grid-template-rows: auto
+
   
 .column-4
   grid-column-start: span 4
@@ -69,11 +75,11 @@ p
 .toggle
   display: flex
   justify-content: flex-end
-  font-size: 1.125rem
+  font-size: 2rem
   align-items: center
+  padding: 0.75em
 
 i
-    font-size: 1.2em 
     margin: 0 0 0 0.5rem
 
 .nav-item
@@ -125,9 +131,17 @@ i
     h1 
         font-size: 48px
     h2 
-        font-family: Roboto Slab
+
         font-size: 45px
         line-height: 1.5em
+    #logo 
+        h1 
+            font-size: 2.5rem
+            margin: 0
+        h2 
+            display: block
+        img
+            height: 2.5rem
 
 //Header/Jumbo
 .container
@@ -145,11 +159,12 @@ i
         font-size: 150px
         
     h2 
-        font-size: 60px
         margin-top: 0
         width: 70%
         margin-left: auto
         margin-right: auto
+        font-style: Roboto Slab
+
     .LeadText
         color: #ffffff
         text-align: center
@@ -211,6 +226,13 @@ i
         padding: 1em
         margin: 0
         
+.projectIcons
+    display: flex 
+    justify-content: center
+    i 
+        font-size: 40px
+        padding: 0.5em
+        color: #f05f40
 
 .projects
     width: 90%
@@ -220,6 +242,7 @@ i
     h2 
         grid-column-start: span 12
         grid-column-end: span 12
+    padding-bottom: 1em
 .Project-card
     display: flex
     flex-direction: column
@@ -236,4 +259,68 @@ i
         margin: auto
     p 
         padding: 1em
+        margin: 0
 
+.contactContainer
+    width: 100%
+    background: rgba(52, 152, 219, 0.6)
+
+.contactarea
+    width: 90%
+    margin: auto
+    color: #fff
+    h2 
+        text-align: center
+        padding: 1em
+        margin: 0
+        
+
+
+#contact-form
+    display: flex
+    flex-direction: column
+    max-width: 1000px
+    margin: auto
+    input:not([type=button]), textarea
+        width: 100%
+        padding: 0.25em
+        margin: 0.5em 0 0.5em 0 
+        border: 2px solid #B1B1B1
+        box-sizing: border-box
+        border-radius: 10px
+        font-size: 1em
+    textarea
+        height: 250px
+    button
+        width: 200px
+        margin: 0.5em auto 0.5em auto 
+        cursor: pointer
+        font-size: 1em
+        line-height: 1.2em
+        padding: .25em
+        border: 3px solid #29a9df
+        color: #29a9df
+        box-sizing: border-box
+        border-radius: 30px
+        text-align: center
+        background: #041520
+
+
+
+footer
+    display: flex 
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: #E7E7E7
+    .logo-foot
+        display: flex
+        padding-top: 1.5em
+    h1 
+        font-family: "Ruthie"
+        font-size: 4rem
+        margin: 0
+    img 
+        width: 2em
+        height: 2em
+        margin-left: 0.5em
