@@ -316,7 +316,8 @@ i {
 }
 .contactarea h2 {
   text-align: center;
-  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
   margin: 0;
 }
 
