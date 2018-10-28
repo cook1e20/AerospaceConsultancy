@@ -18,8 +18,9 @@ a {
   color: #888;
   text-decoration: none;
 }
+
 a:visited {
-  color: #e32626;
+  color: #E32626;
 }
 
 h1 {
@@ -41,9 +42,7 @@ p {
 }
 
 #logo {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 #logo h1 {
@@ -58,9 +57,7 @@ p {
   display: none;
 }
 #logo .logo-top {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -72,7 +69,7 @@ p {
 
 .flex-nav {
   height: 5rem;
-  margin: 0 2rem 0 2rem;
+  padding: 0 2rem 0 2rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
@@ -81,9 +78,7 @@ p {
 .column-4 {
   grid-column-start: span 4;
   grid-column-end: span 4;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -93,12 +88,9 @@ p {
 }
 
 .toggle {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   font-size: 2rem;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0.75em;
 }
@@ -113,14 +105,11 @@ i {
 }
 
 .flex-nav ul.active {
-  display: -ms-flexbox;
   display: flex;
   background: #fff;
   height: 100vh;
   width: 100vw;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
   padding: 0;
 }
@@ -130,9 +119,7 @@ i {
 .flex-nav ul {
   position: absolute;
   z-index: 1;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-direction: column;
   flex-direction: column;
   display: none;
   width: 100%;
@@ -158,12 +145,9 @@ i {
   }
 
   .flex-nav ul {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
     flex-direction: row;
     position: relative;
-    -ms-flex-pack: end;
     justify-content: flex-end;
     margin: auto;
   }
@@ -187,17 +171,18 @@ i {
   #logo img {
     height: 2.5rem;
   }
+
+  .projectImg {
+    width: 30vw !important;
+  }
 }
 .container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/herobanner.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/herobanner.png);
   width: 100vw;
   min-height: 40vh;
   background-position: center;
   background-size: cover;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .container h1 {
@@ -260,7 +245,7 @@ i {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2);
   padding: 1em;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #E1E1E1;
   margin: 0.5em;
 }
 .What-card h3 {
@@ -271,7 +256,6 @@ i {
 .What-card i {
   grid-column-start: span 3;
   grid-column-end: span 3;
-  -ms-flex-item-align: center;
   align-self: center;
   justify-self: center;
   color: #f05f40;
@@ -285,9 +269,7 @@ i {
 }
 
 .projectIcons {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 .projectIcons i {
@@ -309,25 +291,24 @@ i {
 }
 
 .Project-card {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #E1E1E1;
   margin: 0.5em;
 }
 .Project-card h3 {
   font-size: 1.5em;
 }
-.Project-card img {
-  min-width: 30vw;
-  height: auto;
-  margin: auto;
-}
 .Project-card p {
   padding: 1em;
   margin: 0;
+}
+
+.projectImg {
+  height: auto;
+  margin: auto;
+  width: 70vw;
 }
 
 .contactContainer {
@@ -348,19 +329,16 @@ i {
 }
 
 #contact-form {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 1000px;
   margin: auto;
 }
-#contact-form input:not([type="button"]),
-#contact-form textarea {
+#contact-form input:not([type=button]), #contact-form textarea {
   width: 100%;
   padding: 0.25em;
   margin: 0.5em 0 0.5em 0;
-  border: 2px solid #b1b1b1;
+  border: 2px solid #B1B1B1;
   box-sizing: border-box;
   border-radius: 10px;
   font-size: 1em;
@@ -384,25 +362,23 @@ i {
 }
 
 footer {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
-  background-color: #e7e7e7;
+  background-color: #E7E7E7;
 }
 footer .logo-foot {
-  display: -ms-flexbox;
   display: flex;
-  padding-top: 1.5em;
+  padding: 1.5em;
+  width: 400px;
+  justify-content: center;
 }
 footer h1 {
   font-family: "Ruthie";
   font-size: 4rem;
   margin: 0;
+  width: fit-content;
 }
 footer img {
   width: 2em;

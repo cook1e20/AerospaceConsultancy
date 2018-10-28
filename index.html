@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Ruthie" rel="stylesheet">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
+
 <body>
 
     <body onresize="resizeToggle()" onscroll='resizeToggle()'>
@@ -28,21 +29,24 @@
                 </a>
                 <ul id='phone-nav'>
                     <li class=' nav-item '>
-                        <a href="#">Home</a>
+                        <a href="#top">Home</a>
+                    </li>
+                    <li class=' nav-item '>
+                        <a href="#about">About</a>
                     </li>
                     <li class='nav-item '>
-                        <a href="#">Services</a>
+                        <a href="#services">Services</a>
                     </li>
                     <li class='nav-item '>
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li class='nav-item '>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="container">
+        <div class="container" id="top">
             <div class='LeadText'>
                 <h1>S Cooke</h1>
                 <h2>Aerospace, Aviation and Defence technical support and services.</h2>
@@ -51,7 +55,7 @@
             </div>
         </div>
 
-        <div class='what'>
+        <div class='what' id='services'>
             <h2>What we do</h2>
             <div class="What-card column-6 column-12">
                 <h3>Requirements management</h3>
@@ -80,7 +84,7 @@
                 </p>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <h2>About </h2>
             <p> In a world of increased pressure, driven by cutting edge digital technologies, pressures to reduce costs and
                 delivering products with an accelerated time to revenue, innovation and expertise are key aspects of any
@@ -96,11 +100,11 @@
             </p>
             <img src='./img/jetaircraft.png ' alt="F35 Fighter aircraft " class="aircraftimg">
         </div>
-        <div class='projects'>
+        <div class='projects' id='projects'>
             <h2>Projects</h2>
             <div class="Project-card column-6 column-12">
                 <h3>Cockpit Design</h3>
-                <img src="./img/Cockpit.png " alt="Aircraft cockpit ">
+                <img src="./img/Cockpit.png " alt="Aircraft cockpit " class="projectImg">
                 <p>Developing positive communications between the end user and the engineers to develop cutting edge solutions
                     to the highly demanding Cockpit enviroment.</p>
                 <div class='projectIcons'>
@@ -111,7 +115,7 @@
             </div>
             <div class="Project-card column-6 column-12">
                 <h3>Avionic Test</h3>
-                <img src="./img/Avionictest.png " alt="Aircraft Avionic testing ">
+                <img src="./img/Avionictest.png " alt="Aircraft Avionic testing " class="projectImg">
                 <p>Ensuring the Avionic Product was fit for purpose, Planning, performing and delivering detailed reports on
                     the lastest software standard. </p>
                 <div class='projectIcons'>
@@ -122,7 +126,7 @@
             </div>
             <div class="Project-card column-6 column-12">
                 <h3>Enviromental Qualification Testing</h3>
-                <img src="./img/Enviromentaltest.png " alt="Aircraft covered in snow ">
+                <img src="./img/Enviromentaltest.png " alt="Aircraft covered in snow " class="projectImg">
                 <p>Providing qualification evidence that the avionic equipment meets the latest Do-160 enviromental testing
                     standards.
                 </p>
@@ -132,7 +136,7 @@
                 </div>
             </div>
         </div>
-        <div class="contactContainer">
+        <div class="contactContainer" id="contact">
             <div class="contactarea">
                 <h2>Get in touch</h2>
                 <form name="contact" id="contact-form" method='POST' netlify>
@@ -158,7 +162,7 @@
                 <img src='./img/envelope-open-solid.svg'>
             </a>
             <p>Site Created by
-                <a href="" style="color:#29a9df">Cooke</a> © Copyright S Cooke Ltd. </p>
+                <a href="https://www.stephencooke.co.uk" style="color:#29a9df">Cooke</a> © Copyright S Cooke Ltd. </p>
         </footer>
 
 
