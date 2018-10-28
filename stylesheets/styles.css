@@ -40,8 +40,10 @@ p {
 }
 
 #logo {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 #logo h1 {
   font-family: "Ruthie";
@@ -55,8 +57,10 @@ p {
   display: none;
 }
 #logo .logo-top {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .logoimg {
@@ -76,8 +80,10 @@ p {
 .column-4 {
   grid-column-start: span 4;
   grid-column-end: span 4;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .column-8 {
@@ -86,10 +92,13 @@ p {
 }
 
 .toggle {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   font-size: 2rem;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 0.75em;
 }
 
@@ -103,12 +112,15 @@ i {
 }
 
 .flex-nav ul.active {
+  display: -ms-flexbox;
   display: flex;
   background: #fff;
   height: 100vh;
   width: 100vw;
-  justify-content: center;
-  align-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding: 0;
 }
 .flex-nav ul.active li {
@@ -117,8 +129,10 @@ i {
 .flex-nav ul {
   position: absolute;
   z-index: 1;
-  flex-wrap: wrap;
-  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
   display: none;
   width: 100%;
   left: 0;
@@ -143,10 +157,13 @@ i {
   }
 
   .flex-nav ul {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     position: relative;
-    justify-content: flex-end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
     margin: auto;
   }
 
@@ -176,8 +193,10 @@ i {
   min-height: 40vh;
   background-position: center;
   background-size: cover;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 .container h1 {
   font-family: "Ruthie";
@@ -250,7 +269,8 @@ i {
 .What-card i {
   grid-column-start: span 3;
   grid-column-end: span 3;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   justify-self: center;
   color: #f05f40;
 }
@@ -263,8 +283,10 @@ i {
 }
 
 .projectIcons {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .projectIcons i {
   font-size: 40px;
@@ -285,8 +307,10 @@ i {
 }
 
 .Project-card {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   text-align: center;
   border: 1px solid #E1E1E1;
   margin: 0.5em;
@@ -322,8 +346,10 @@ i {
 }
 
 #contact-form {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   max-width: 1000px;
   margin: auto;
 }
@@ -355,13 +381,18 @@ i {
 }
 
 footer {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   background-color: #E7E7E7;
 }
 footer .logo-foot {
+  display: -ms-flexbox;
   display: flex;
   padding-top: 1.5em;
 }

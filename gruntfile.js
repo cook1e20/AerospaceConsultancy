@@ -1,3 +1,4 @@
+
 module.exports = (grunt) => {
     grunt.initConfig({
         watch: {
@@ -27,11 +28,14 @@ module.exports = (grunt) => {
                     }
                 }
             }
-        }
+        },
+
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
-
+    grunt.loadNpmTasks('grunt-postcss');
+    
     grunt.registerTask('default', ['browserSync', 'watch']);
+
 }
