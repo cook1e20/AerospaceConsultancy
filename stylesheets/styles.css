@@ -17,8 +17,9 @@ body {
 a {
   color: #888;
   text-decoration: none;
-  a: visited;
-  a-color: #E32626;
+}
+a:visited {
+  color: #e32626;
 }
 
 h1 {
@@ -43,7 +44,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
 }
 #logo h1 {
   font-family: "Ruthie";
@@ -60,7 +61,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .logoimg {
@@ -83,7 +84,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
-      justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .column-8 {
@@ -95,10 +96,10 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
-      justify-content: flex-end;
+  justify-content: flex-end;
   font-size: 2rem;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   padding: 0.75em;
 }
 
@@ -118,9 +119,9 @@ i {
   height: 100vh;
   width: 100vw;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   padding: 0;
 }
 .flex-nav ul.active li {
@@ -130,9 +131,9 @@ i {
   position: absolute;
   z-index: 1;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   display: none;
   width: 100%;
   left: 0;
@@ -160,10 +161,10 @@ i {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
     position: relative;
     -ms-flex-pack: end;
-        justify-content: flex-end;
+    justify-content: flex-end;
     margin: auto;
   }
 
@@ -188,15 +189,16 @@ i {
   }
 }
 .container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/herobanner.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/herobanner.png);
   width: 100vw;
   min-height: 40vh;
   background-position: center;
   background-size: cover;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 .container h1 {
   font-family: "Ruthie";
@@ -258,7 +260,7 @@ i {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2);
   padding: 1em;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   margin: 0.5em;
 }
 .What-card h3 {
@@ -270,7 +272,7 @@ i {
   grid-column-start: span 3;
   grid-column-end: span 3;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   justify-self: center;
   color: #f05f40;
 }
@@ -286,7 +288,7 @@ i {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
 }
 .projectIcons i {
   font-size: 40px;
@@ -310,9 +312,9 @@ i {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   text-align: center;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   margin: 0.5em;
 }
 .Project-card h3 {
@@ -349,15 +351,16 @@ i {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   max-width: 1000px;
   margin: auto;
 }
-#contact-form input:not([type=button]), #contact-form textarea {
+#contact-form input:not([type="button"]),
+#contact-form textarea {
   width: 100%;
   padding: 0.25em;
   margin: 0.5em 0 0.5em 0;
-  border: 2px solid #B1B1B1;
+  border: 2px solid #b1b1b1;
   box-sizing: border-box;
   border-radius: 10px;
   font-size: 1em;
@@ -384,12 +387,12 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
-  background-color: #E7E7E7;
+  align-items: center;
+  background-color: #e7e7e7;
 }
 footer .logo-foot {
   display: -ms-flexbox;
